@@ -12,5 +12,5 @@ output "myaz2" {
 }
 
 output "myaz3" {
-  value      = data.huaweicloud_availability_zones.myaz.names[3]
+  value      = data.huaweicloud_availability_zones.myaz.names[0]
 }
