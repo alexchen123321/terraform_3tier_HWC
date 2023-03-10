@@ -70,7 +70,8 @@ resource "huaweicloud_compute_instance" "basic" {
   image_id          = data.huaweicloud_images_image.myimage.id
   #flavor_id         = data.huaweicloud_compute_flavors.myflavor.ids[0]
   flavor_id = "s6.small.1"
-  security_groups   = ["secgroup-basic"]
+  #security_groups   = ["secgroup-basic"]
+  security_groups   = ["default"]
   # availability_zone = each.value.availability_zones
 
   network {
