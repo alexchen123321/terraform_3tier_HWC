@@ -10,8 +10,8 @@ output "default_region" { value = "cn-south-1" }
 # AK/SK common Services/share Services/ops ,  transit , security/audit account 
 output "common_service_account_name"   { value = "common_service" }
 output "common_service_root_account_name"   { value = "Change me" }
-output "common_service_account_ak"   { value = "BVRCZ1DLQZA1QLVBTIMS" }
-output "common_service_account_sk"   { value = "Ur6Im3UQf5KFPSIaHy4HNWnNNVyYm2tcILV8TBIA" }
+output "common_service_account_ak"   { value = "x" }
+output "common_service_account_sk"   { value = "x" }
 
 # security / Audit  account
 output "security_service_account_name"   { value = "security_service" }
