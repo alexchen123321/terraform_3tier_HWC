@@ -26,30 +26,30 @@ variable "dns_list" {
 
 # data "huaweicloud_availability_zones" "myaz" {}
 
-variable "ecs_names" {
-  type = map(object({
-    name = string
-    flavor_id = string
-    availability_zones = string
-  }))
+# variable "ecs_names" {
+#   type = map(object({
+#     name = string
+#     flavor_id = string
+#     availability_zones = string
+#   }))
 
-  default = {
-    "terraform_ecs1" = {
-      # availability_zones = "cn-south-1c"
-      flavor_id = "s6.small.1"
-      name = "terraform_ecs1"
-    },
-    "terraform_ecs2" = {
-      # availability_zones = "cn-south-1e"
-      flavor_id = "s6.medium.2"
-      name = "terraform_ecs2"
-    },
-    "terraform_ecs3" = {
-      # availability_zones = "cn-south-1f"
-      flavor_id = "s6.medium.4"
-      name = "terraform_ecs3"
-    }
+#   default = {
+#     "terraform_ecs1" = {
+#       # availability_zones = "cn-south-1c"
+#       flavor_id = "s6.small.1"
+#       name = "terraform_ecs1"
+#     },
+#     "terraform_ecs2" = {
+#       # availability_zones = "cn-south-1e"
+#       flavor_id = "s6.medium.2"
+#       name = "terraform_ecs2"
+#     },
+#     "terraform_ecs3" = {
+#       # availability_zones = "cn-south-1f"
+#       flavor_id = "s6.medium.4"
+#       name = "terraform_ecs3"
+#     }
   
-  }
+#   }
 
-}
+# }

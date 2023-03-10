@@ -40,14 +40,14 @@ resource "random_password" "password" {
 }
 
 resource "huaweicloud_compute_instance" "basic" {
-  for_each = var.ecs_names
-  name              = each.value.name
+  # for_each = var.ecs_names
+  name              = "terraform_ecs_test_oc"
   admin_pass        = "Oc1234@@"
   image_id          = data.huaweicloud_images_image.myimage.id
   #flavor_id         = data.huaweicloud_compute_flavors.myflavor.ids[0]
-  flavor_id = each.value.flavor_id
+  flavor_id = "s6.small.1"
   security_groups   = ["secgroup-basic"]
-  availability_zone = each.value.availability_zones
+  # availability_zone = each.value.availability_zones
 
   network {
     uuid = huaweicloud_vpc_subnet.subnet_basic.id
