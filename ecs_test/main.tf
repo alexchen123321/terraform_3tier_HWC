@@ -71,7 +71,7 @@ resource "huaweicloud_compute_instance" "basic" {
   #flavor_id         = data.huaweicloud_compute_flavors.myflavor.ids[0]
   flavor_id = "s6.small.1"
   #security_groups   = ["secgroup-basic"]
-  security_groups   = ["default"]
+  security_groups   = ["sg-game"]
   # availability_zone = each.value.availability_zones
 
   network {
