@@ -199,7 +199,7 @@ resource "huaweicloud_compute_instance" "ecs_01" {
     huaweicloud_networking_secgroup.secgroup_oc
   ]
   security_groups   = [huaweicloud_networking_secgroup.secgroup_oc.name]
-
+  availability_zone   = "cn-south-1c"
   network {
     uuid = huaweicloud_vpc_subnet.web_subnet_1.id
   }
@@ -214,7 +214,7 @@ resource "huaweicloud_compute_instance" "ecs_02" {
     huaweicloud_networking_secgroup.secgroup_oc
   ]
   security_groups   = [huaweicloud_networking_secgroup.secgroup_oc.name]
-
+  availability_zone   = "cn-south-1e"
   network {
     uuid = huaweicloud_vpc_subnet.web_subnet_2.id
   }
