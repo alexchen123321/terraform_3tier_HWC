@@ -157,8 +157,8 @@ resource "huaweicloud_networking_secgroup_rule" "allow_db_3306_web_subnet_1" {
   direction         = "ingress"
   ethertype         = "IPv4"
   protocol          = "tcp"
-  port_range_min    = 3306
-  port_range_max    = 3306
+  port_range_min    = 5432
+  port_range_max    = 5432
   remote_ip_prefix  = huaweicloud_vpc_subnet.web_subnet_1.cidr
   security_group_id = huaweicloud_networking_secgroup.secgroup_oc_database.id
 }
@@ -166,8 +166,8 @@ resource "huaweicloud_networking_secgroup_rule" "allow_db_3306_web_subnet_2" {
   direction         = "ingress"
   ethertype         = "IPv4"
   protocol          = "tcp"
-  port_range_min    = 3306
-  port_range_max    = 3306
+  port_range_min    = 5432
+  port_range_max    = 5432
   remote_ip_prefix  = huaweicloud_vpc_subnet.web_subnet_2.cidr
   security_group_id = huaweicloud_networking_secgroup.secgroup_oc_database.id
 }
