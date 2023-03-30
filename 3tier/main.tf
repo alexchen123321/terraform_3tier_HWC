@@ -194,7 +194,7 @@ resource "huaweicloud_compute_instance" "ecs_01" {
   name              = "terraform_ecs_test_oc_01"
   admin_pass        = "Oc1234@@"
   image_id          = data.huaweicloud_images_image.myimage.id
-  flavor_id = "s6.small.1"
+  flavor_id = var.flavor_id
   depends_on = [
     huaweicloud_networking_secgroup.secgroup_oc
   ]
@@ -209,7 +209,7 @@ resource "huaweicloud_compute_instance" "ecs_02" {
   name              = "terraform_ecs_test_oc_02"
   admin_pass        = "Oc1234@@"
   image_id          = data.huaweicloud_images_image.myimage.id
-  flavor_id = "s6.small.1"
+  flavor_id = var.flavor_id
   depends_on = [
     huaweicloud_networking_secgroup.secgroup_oc
   ]
