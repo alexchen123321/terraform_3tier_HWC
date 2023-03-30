@@ -23,6 +23,10 @@ variable "dns_list" {
   default = ["100.125.1.250","100.125.3.250"]
 }
 
+variable "flavor_id" {
+  default = "s6.small.1"
+}
+
 
 # data "huaweicloud_availability_zones" "myaz" {}
 
