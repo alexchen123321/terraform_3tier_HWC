@@ -1,6 +1,6 @@
 variable "vpc_name" {
   type    = string
-  default = "terraform_vpc_basic"
+  default = "OneConnect_vpc_basic"
 }
 
 variable "vpc_cidr" {
