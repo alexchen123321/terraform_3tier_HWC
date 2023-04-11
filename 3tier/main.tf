@@ -2,7 +2,7 @@ data "huaweicloud_availability_zones" "myaz" {}
 
 # Create DEMO VPC
 resource "huaweicloud_vpc" "vpc_basic" {
-  name = "OC_TERRAFORM_DEMO_BASIC_VPC_new"
+  name = "OC_TERRAFORM_DEMO_BASIC_VPC"
   cidr = "10.0.0.0/16"
 }
 
